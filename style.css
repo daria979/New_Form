@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding:0;
+}
+html, body{
+    height: 100%;
+    background-color: thistle;
+}
+body{
+    background: url("Resources/Rectangle3.jpg");
+    background-repeat: repeat;
+    width: 100px;
+    height: 200px;
+    transform: rotate(-30deg);
+}
+.form{
+    background-color: white;
+    max-width: 400px;
+    height:100%;
+    margin: auto;
+    z-index: 1;
+ }
