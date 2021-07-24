@@ -3,20 +3,87 @@
     padding:0;
 }
 html, body{
+    overflow: hidden;
     height: 100%;
-    background-color: thistle;
+    background: rgb(63,206,251);
+    background: linear-gradient(90deg, rgba(63,206,251,1) 0%, rgba(247,70,252,1) 100%);
+    /* font-family: 'Maven Pro', sans-serif; */
 }
-body{
-    background: url("Resources/Rectangle3.jpg");
-    background-repeat: repeat;
-    width: 100px;
-    height: 200px;
+
+/*O metoda de a personaliza spatiul dintre imaginile repetate la backgroound-repeat*/
+
+/*.repeated_bk{
+    height:100%;
+    /*background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="500"><image width="500" height="600" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+gAAAJYAQMAAADL0F5mAAAABlBMVEUAAAA1RlxDOWvoAAABG0lEQVR4nO3NMQEAAAwCIPuX1hjbAQVIL8Vut9vtdrvdbrfb7Xa73W632+12u91ut9vtdrvdbrfb7Xa73W632+12u91ut9vtdrvdbrfb7Xa73W632+12u91ut9vtdrvdbrfb7Xa73W632+12u91ut9vtdrvdbrfb7Xa73W632+12u91ut9vtdrvdbrfb7Xa73W632+12u91ut9vtdrvdbrfb7Xa73W632+12u91ut9vtdrvdbrfb7Xa73W632+12u91ut9vtdrvdbrfb7Xa73W632+12u91ut9vtdrvdbrfb7Xa73W632+12u91ut9vtdrvdbrfb7Xa73W632+12u91ut9vtdrvdbrfb7Xa73W632+12u91ut9vf7AOZ4uQWtHFh6QAAAABJRU5ErkJggg==" /></svg>');                
+}*/
+
+.shape1{
+    /* background-image: url("Resources/Rectangle3.jpg"); */
+    background-color: lightblue;
+    width: 30%;
+    height: 800px;
     transform: rotate(-30deg);
+    border-radius: 15px;
+    position:absolute;
+    top:-400px;
+    left:-200px;
+    opacity: 0.2;
+    z-index: 1;
 }
-.form{
+.shape2{
+    /* background-image: url("Resources/Rectangle3.jpg"); */
+    background-color:#d912df;
+    width: 30%;
+    height: 800px;
+    transform: rotate(-30deg);
+    border-radius: 15px;
+    position:absolute;
+    top:380px;
+    right:-200px;
+    opacity: 0.2;
+    z-index: 1; 
+}
+
+.Form{
+    position: relative;
     background-color: white;
-    max-width: 400px;
+    max-width: 30%;
     height:100%;
     margin: auto;
-    z-index: 1;
- }
+    z-index: 2;
+}
+
+.login{
+    font-size:3em;
+    text-align: center;
+    padding: 10%;
+    padding-bottom: 0;
+    color:#1a1919;
+}
+
+.data{
+    padding:10%;
+    height:25%;
+}
+label{
+    color:rgb(133, 130, 130);
+}
+input{
+    padding:10px;
+    border: none;
+    border-bottom: 1px solid rgb(175, 172, 172);
+    width:100%;
+    font-size: 16px;
+    font-family: Font Awesome;
+    font-weight: 500;
+}
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgb(175, 172, 172);
+    padding:10px;
+}
+.icon{
+    padding:0;
+}
+
