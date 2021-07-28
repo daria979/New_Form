@@ -20,34 +20,34 @@ html,body{
 .shape1{
     /* background-image: url("Resources/Rectangle3.jpg"); */
     background-color: lightblue;
-    width: 30%;
-    height: 800px;
+    width: 500px;
+    height: 500px;
     transform: rotate(-30deg);
     border-radius: 15px;
     position:absolute;
-    top:-400px;
-    left:-200px;
+    top:-100px;
+    left:-300px; 
     opacity: 0.2;
     z-index: 1;
 }
 .shape2{
     /* background-image: url("Resources/Rectangle3.jpg"); */
     background-color:#d912df;
-    width: 30%;
+    width: 500px;
     height: 800px;
     transform: rotate(-30deg);
     border-radius: 15px;
     position:absolute;
-    top:380px;
-    right:-200px;
+    bottom:100px;
+    right:-300px;
     opacity: 0.2;
     z-index: 1; 
+    overflow: hidden;
 }
 
 .Form{
     position: relative;
     background-color: white;
-    max-width: 30%;
     height:100%;
     margin: auto;
     z-index: 2;
@@ -87,21 +87,116 @@ input{
 .icon{
     padding:0;
 }
-.forget{
+.under_text{
     font-size: 0.9em;
     text-align: right;
     padding-right: 50px;
     color:rgb(133, 130, 130);
 }
+.text2{
+    text-align: center;
+    padding:0;
+    margin-top: 20px;
+}
 button{
     font-size: 0.8em;
     color:white;
-    width:80%;
-    padding:10px;
-    margin:10%;
     border-radius: 50px;
     border-color: transparent;
-    background: rgb(63,206,251);
+    /* background: rgb(63,206,251); */
     background: linear-gradient(90deg, rgba(63,206,251,1) 0%, rgba(247,70,252,1) 100%);
 }
+.social_media{
+    margin-top:30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:stretch;
+    width:60%;
+    margin-left: 20%;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .Form{
+        max-width:60%;
+    }
+    .icon{
+        width:70%;
+    }
+    button{
+        padding:10px;
+        width:70%;
+        margin:15% 15% 10%;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .Form{
+        max-width:50%;
+    }
+    .icon{
+        width:60%;
+    }
+    button{
+        padding:15px;
+        width:70%;
+        margin:15% 15% 10%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .From{
+        max-width: 20%;
+    }
+    .icon{
+        width:50%;
+    }
+    button{
+        padding:20px;
+        width:50%;
+        margin:25% 25% 20px;
+    }
+
+}
+@media only screen and (min-width: 1200px) {
+    .From{
+        max-width: 90%;
+    }
+    .icon{
+        width:40%;
+    }
+    button{
+        padding:20px;
+        width:40%;
+        margin:30% 30% 10%;
+    }
+    .shape1{
+        /* background-image: url("Resources/Rectangle3.jpg"); */
+        background-color: lightblue;
+        width: 500px;
+        height: 500px;
+        transform: rotate(-30deg);
+        border-radius: 15px;
+        position:absolute;
+        top:-100px;
+        left:-300px; 
+        opacity: 0.2;
+        z-index: 1;
+    }
+    .shape2{
+        /* background-image: url("Resources/Rectangle3.jpg"); */
+        background-color:#d912df;
+        width: 500px;
+        height: 800px;
+        transform: rotate(-30deg);
+        border-radius: 15px;
+        position:absolute;
+        bottom:100px;
+        right:-300px;
+        opacity: 0.2;
+        z-index: 1; 
+        
+    }
+}
+
 
